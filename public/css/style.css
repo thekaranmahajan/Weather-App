@@ -1,0 +1,99 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 200px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid;
+    padding: 8px;
+}
+
+.weather-widget {
+    background-color: #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    width: 350px; /* Increased width */
+  }
+  .city-name {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  };
+  .temperature {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  .details {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .cloud-icon {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+  .widget-icon, .night-icon {
+    font-size: 48px;
+    margin-top: 20px;
+    animation: bounceAndBlink 2s infinite;
+  }
+  @keyframes bounceAndBlink {
+    0%, 100% {
+      transform: translateY(0);
+      color: white;
+    }
+    50% {
+      transform: translateY(-20px);
+      color: #ffc107; /* Change to a different attention-grabbing color */
+    }
+  }
