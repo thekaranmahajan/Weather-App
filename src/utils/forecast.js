@@ -1,6 +1,7 @@
 const request = require('request');
 const lookup = require('country-code-lookup');
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config({path: ".././.env"});
 
 let country_code = undefined;
 
