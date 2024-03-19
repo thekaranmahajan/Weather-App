@@ -1,6 +1,7 @@
 const request = require("request");
+const dotenv = require('dotenv');
+dotenv.config({path: ".././.env"});
 const api_key = process.env.API_KEY;
-require('dotenv').config();
 
 const askWindSpeed = (location, callback) => {
     const url = "http://api.weatherstack.com/current?access_key="+api_key+"&query="+location;

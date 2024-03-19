@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit', (e) => {
                     if(data.country_iso2) {
                         var image = document.createElement("img");
                         var imageParent = document.getElementById("location");
-                        image.src = "https://www.countryflagicons.com/FLAT/64/"+ data.country_iso2 +".png";
+                        image.src = "https://flagsapi.com/"+ data.country_iso2 +"/flat/64.png";
                         image.style.height = "40px";
                         image.style.marginLeft = "4px";
                         imageParent.appendChild(image);
