@@ -19,14 +19,14 @@ app.use(express.static(publicDirPath));
 app.get("", (req, res) => {
     res.render('index', {
         title: "Weather App",
-        name: "Karan"
+        name: "Karan Mahajan"
     });
 });
 
 app.get("/about", (req, res) => {
     res.render("about", {
         title: "About Me",
-        name: "Karan"
+        name: "Karan Mahajan"
     });
 });
 
@@ -34,7 +34,7 @@ app.get("/help", (req, res) => {
     res.render("help", {
         title: "Help",
         text: "This is help page",
-        name: "Karan"
+        name: "Karan Mahajan"
     });
 });
 
@@ -83,7 +83,7 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
     res.render("404", {
         title: "404",
-        name: "Karan",
+        name: "Karan Mahajan",
         errorMessage: "Help articles not found"
     });
 });
@@ -91,7 +91,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
     res.render("404", {
         title: "404",
-        name: "Karan",
+        name: "Karan Mahajan",
         errorMessage: "Page not found"
     });
 });
